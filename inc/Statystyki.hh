@@ -1,13 +1,20 @@
-#ifndef WYRAZENIEZESP_HH
-#define WYRAZENIEZESP_HH
-
-
-
-#include "LZespolona.hh"
-#include "WyrazenieZesp.hh"
+#ifndef STATYSTYKI_HH
+#define STATYSTYKI_HH
+#include <iostream>
 
 /*
- * Tu nalezy zdefiniowac funkcje, ktore definiuja model statystyki 
+ *  Struktura przechowujaca odpowiedzi do statystyki
  */
+
+struct Punktacja {
+    int dobre;
+    int zle;
+}
+
+/*
+ * Naglowek przyszlej funkcji
+ */
+
+void KoncowyWynik (Punktacja Punkty);
 
 #endif

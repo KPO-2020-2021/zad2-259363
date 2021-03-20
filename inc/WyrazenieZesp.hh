@@ -2,7 +2,7 @@
 #define WYRAZENIEZESP_HH
 
 
-
+#include <iostream>
 #include "LZespolona.hh"
 
 
@@ -24,12 +24,16 @@ struct WyrazenieZesp {
 
 
 /*
- * Funkcje ponizej nalezy zdefiniowac w module.
- *
+ * Naglowki funkcji
  */
 
 
-void Wyswietl(WyrazenieZesp  WyrZ);
+void WyswietlanieSymbolu(Operator Znak);
+void WyswietlWyrazenieZ(WyrazenieZesp  WyrZ);
 LZespolona Oblicz(WyrazenieZesp  WyrZ);
+char PrzekazanieSymbolu (Operator Operacja);
+Operator PobranieSymbolu (char Znak);
+ostream& operator << (ostream& StrWyj, WyrazenieZesp WyrZ);
+istream& operator >> (istream& StrWej, WyrazenieZesp& WyrZ);
 
 #endif
